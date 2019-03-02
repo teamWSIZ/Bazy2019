@@ -18,5 +18,8 @@ https://www.w3schools.com/sql/
 
 * Znaleźć pracowników w których opisie (Notes) jest słowo 'fluent'
 (odp: `SELECT * FROM Employees where Notes like '%fluent%';`)
- 
 
+* Znaleźć wszystkie zamówienia klienta o numerze 80 (w tabeli 'Orders')
+ 
+* Znaleźć zamówienia po 1 lipca 1996:
+(odp: `SELECT * FROM orders where orderdate > '1/7/1996';`)
