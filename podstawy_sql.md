@@ -23,3 +23,12 @@ https://www.w3schools.com/sql/
  
 * Znaleźć zamówienia po 1 lipca 1996:
 (odp: `SELECT * FROM orders where orderdate > '1/7/1996';`)
+
+* Wypisać klientów sortując ich po krajach i miastach, 
+(odp `SELECT * FROM Customers order by Country, City;`)
+
+
+Łączenie z VPN
+
+http://bit.do/wsiz-vpn-tutorial
+
