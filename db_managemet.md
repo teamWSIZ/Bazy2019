@@ -21,3 +21,26 @@ create table tt(
   t text
 );
 ```
+
+### dopisywanie danych
+select * from tt;
+
+insert into tt(t) values ('Abra');
+insert into tt(t) values ('Kadabra');
+insert into tt(t) values ('Hokus');
+insert into tt(t) values ('Pokus');
+
+### tworzenie bazy customers z w3schools
+
+create table customers
+(
+  customerid SERIAL,
+  customername text,
+  contactname text,
+  address text,
+  city text,
+  postalcode text,
+  country text
+);
+
+
