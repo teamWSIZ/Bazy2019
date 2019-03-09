@@ -1,5 +1,7 @@
 
 ## Tworzenie usera i bazy (z usera postgres)
+Założenie: jesteśmy zalogowani userem `postgres` na bazę `postgres`.
+
 
 ```
 CREATE USER student WITH PASSWORD 'wsiz#1234';
