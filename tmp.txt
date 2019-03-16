@@ -1,0 +1,12 @@
+-- wyszukanie klientów z największą liczbą zamówień
+select customerid, count(*) from orders group by customerid order by count(*) DESC limit 10;
+
+
+--znaleźć (z tabeli orderdetail) produkty których sztuk najwięcej zamówiono
+select productid, sum(quantity) cnt from orderdetail group by productid order by cnt DESC limit 20000000;
+
+--zadanie -- sprawdzić w których miesiącach jest największa liczba zamówień (z tabeli orders; jakoś wyciągnąć
+  -- miesiąc z każdej daty zamówienia)
+??
+
+

@@ -15,6 +15,7 @@ https://www.w3schools.com/sql/
 
 * Znaleźć wszystkich pracowników (Employees) urodzonych po 1 Stycznia 1965
 (odp: `SELECT * FROM Employees where BirthDate > '1/1/1968';`)
+lub: `SELECT * FROM Employees where BirthDate > '1950-01-20';`
 
 * Znaleźć pracowników w których opisie (Notes) jest słowo 'fluent'
 (odp: `SELECT * FROM Employees where Notes like '%fluent%';`)
