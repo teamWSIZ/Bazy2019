@@ -33,6 +33,23 @@ https://www.w3schools.com/sql/
 (odp `SELECT * FROM Customers order by Country, City;`)
 
 
+
+* Wypisać ile klientów mamy z każdego z krajów
+`select country, count(*) from customers group by country order by country;`
+
+*  wypisać tabelę pokazującą ile mamy klientów z każdego z krajów; 
+Dodatkowo: 
+    - posortować po liczbie klientów
+    - wypisać tylko 10 'najlepszych' krajów
+     
+`select country, count(*) cnt from customers group by country order by cnt desc limit 10;`
+(uwaga: `cnt` to jest alias do `count(*)`; można go używać zamiennie)
+
+
+--zadanie: sprawdzić którzy klienci kupili za nawiększe kwoty
+
+
+
 Łączenie z VPN
 
 http://bit.do/wsiz-vpn-tutorial
