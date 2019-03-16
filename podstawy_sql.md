@@ -20,6 +20,11 @@ https://www.w3schools.com/sql/
 (odp: `SELECT * FROM Employees where Notes like '%fluent%';`)
 
 * Znaleźć wszystkie zamówienia klienta o numerze 80 (w tabeli 'Orders')
+
+* Znaleźć ostatnie 20 zamówień klienta o numerze 80:
+`select * from orders where customerid=80 order by orderdate desc limit 20;`
+
+
  
 * Znaleźć zamówienia po 1 lipca 1996:
 (odp: `SELECT * FROM orders where orderdate > '1/7/1996';`)
