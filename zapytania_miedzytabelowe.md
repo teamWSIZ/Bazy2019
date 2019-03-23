@@ -24,3 +24,27 @@ select o.orderid as Zamowienie, o.employeeid, o.orderdate, s.shippername,
 
 * Wyznaczyć pięć produktów z których otrzymaliśmy najwięcej zamówień (w sensie $$$)
 
+
+## Jakieś rozwiązania
+```
+
+select sum(d.quantity * p.price)
+from orders o, orderdetail d, products p
+where o.orderid = d.orderid and d.productid = p.productid;
+
+
+select sum(d.quantity * p.price)
+from orders o, orderdetail d, products p, customers c
+where o.orderid = d.orderid and d.productid = p.productid and c.customerid = o.customerid and
+      c.country = 'Poland';
+
+select c.country, round(sum(d.quantity * p.price) / 1e6) as orders_mln
+from orders o, orderdetail d, products p, customers c
+where o.orderid = d.orderid and d.productid = p.productid and c.customerid = o.customerid
+group by country
+order by orders_mln desc;
+
+
+SELECT
+  ROUND( 10.812, 0 );
+```
