@@ -25,7 +25,7 @@ select round(sum(d.quantity * p.price) / 1e6) as suma_mln
 from orders o, orderdetail d, products p
 where o.orderid = d.orderid and d.productid = p.productid;
 
---- chcemy rozpiskę sprzedarzy per kraj odbiorcy
+--- chcemy rozpiskę sprzedaży per kraj odbiorcy
 
 select c.country, round(sum(d.quantity * p.price) / 1e6) as suma_mln
 from orders o, orderdetail d, products p, customers c
